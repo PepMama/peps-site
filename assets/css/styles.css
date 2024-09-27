@@ -1,0 +1,99 @@
+/* ========================================*/
+/* ============ CSS PRINCIPAL  ============*/
+/* ========================================*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ========================================*/
+/* ========= FIN CSS PRINCIPAL  ===========*/
+/* ========================================*/
+
+/* ========================================*/
+/* ============ PAGE D'ACCUEIL ============*/
+/* ========================================*/
+.main-container {
+    position: relative;
+    /*padding: 7px;*/
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.logo-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 340px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: solid 6px #ffffff;
+    z-index: 3;
+}
+
+.logo-center > img{
+    width: 230px;
+    height: 245px;
+    object-fit: contain;
+}
+
+.row-top{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    z-index: 2;
+}
+
+.row-bottom{
+    display: grid;
+    grid-template-columns: 25% 50% 25% ;
+    z-index: 2;
+}
+
+.link{
+    position: relative;
+    text-align: center;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.link-img{
+    /*width: 720px;*/
+    height: 485px;
+    transition: transform 0.3s ease;
+}
+
+.link:hover img {
+    transform: scale(1.02);
+}
+
+.img-bottom{
+    height: 480px;
+}
+
+.link-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ========================================*/
+/* ========== FIN PAGE D'ACCUEIL ==========*/
+/* ========================================*/
