@@ -11,7 +11,36 @@
 
 img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn {
+    background: linear-gradient(120deg, #6a00f4, #16d9e3);
+    border: none;
+    border-radius: 30px;
+    padding: 14px 25px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* ========================================*/
@@ -21,7 +50,7 @@ img{
 /* ========================================*/
 /* ============ PAGE D'ACCUEIL ============*/
 /* ========================================*/
-.main-container {
+.main-container-index {
     position: relative;
     /*padding: 7px;*/
     height: 100vh;
@@ -72,7 +101,7 @@ img{
 
 .link-img{
     /*width: 720px;*/
-    height: 485px;
+    height: 50vh;
     transition: transform 0.3s ease;
 }
 
@@ -96,4 +125,124 @@ img{
 
 /* ========================================*/
 /* ========== FIN PAGE D'ACCUEIL ==========*/
+/* ========================================*/
+
+
+/* ========================================*/
+/* =============== PAGE ADN ===============*/
+/* ========================================*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 55px;
+    width: 100%;
+    height: 11vh;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.background-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.url-adn{
+    background-image: url("../images/adn.jpg");
+}
+
+.url-veille{
+    background-image: url("../images/veille.jpg");
+}
+.header-logo{
+    width: 100px;
+    top: 0;
+}
+
+.header-nav ul{
+    display: flex;
+}
+
+.header-nav ul li {
+    padding: 0 20px;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+/*
+.header-nav ul li a:hover {
+    color: #d47a1c;
+}
+*/
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 90px;
+}
+
+.container-titre h2{
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #6a00f4, #16d9e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+
+.container p {
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+footer{
+    background: linear-gradient(120deg, #6a00f4, #16d9e3);
+    text-align: center;
+    padding: 30px 5px;
+    margin-top: 40px;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+}
+
+
+
+
+/* ========================================*/
+/* ============= FIN PAGE ADN =============*/
 /* ========================================*/
