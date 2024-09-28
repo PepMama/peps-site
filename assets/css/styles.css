@@ -161,6 +161,15 @@ ul{
 .url-veille{
     background-image: url("../images/veille.jpg");
 }
+
+.url-how{
+    background-image: url("../images/how.jpg");
+}
+
+.url-accompagnement{
+    background-image: url("../images/adn.jpg");
+}
+
 .header-logo{
     width: 100px;
     top: 0;
