@@ -43,6 +43,17 @@ ul{
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+
+footer{
+    background: linear-gradient(120deg, #6a00f4, #16d9e3);
+    text-align: center;
+    padding: 30px 5px;
+    margin-top: 40px;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+}
+
 /* ========================================*/
 /* ========= FIN CSS PRINCIPAL  ===========*/
 /* ========================================*/
@@ -239,19 +250,41 @@ ul{
     line-height: 1.2;
 }
 
-footer{
-    background: linear-gradient(120deg, #6a00f4, #16d9e3);
-    text-align: center;
-    padding: 30px 5px;
-    margin-top: 40px;
-    bottom: 0;
-    width: 100%;
-    color: #ffffff;
-}
-
-
-
 
 /* ========================================*/
 /* ============= FIN PAGE ADN =============*/
+/* ========================================*/
+
+
+/* ========================================*/
+/* =============== PAGE ACC ===============*/
+/* ========================================*/
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+
+.card-header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    font-size: 1.5em;
+    background: linear-gradient(120deg, #6a00f4, #16d9e3);
+    padding: 15px 10px;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+/* ========================================*/
+/* ============= FIN PAGE ACC =============*/
 /* ========================================*/
