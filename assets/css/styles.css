@@ -120,6 +120,7 @@ footer{
         flex-direction: column;
         position: absolute;
         left: 0;
+        top: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.9);
         z-index: 10;
@@ -248,7 +249,7 @@ footer{
     top: 0;
     left: 0;
     width: 100%;
-    height: 60vh;
+    height: 495px;
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -529,7 +530,7 @@ footer{
 /* ============ Responsive ================*/
 /* ========================================*/
 
-@media (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .link-text{
         font-size: 1.8em;
     }
@@ -576,9 +577,18 @@ footer{
         width: 220px;
         height: 220px;
     }
+
+    .box{
+        width: 40%;
+    }
+
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .background-img {
+        height: 440px;
+    }
+
     .container-cards {
         grid-template-columns: 1fr;
     }
@@ -628,15 +638,17 @@ footer{
     .line{
         height: 1100px;
         width: 6px;
+        margin-left: 80%;
     }
 
     .rond{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+        left: 80.5%;
     }
 
     .box{
-        width: 300px;
+        width: 60%;
     }
 
     .r1{top: 60px;}
@@ -646,17 +658,30 @@ footer{
     .r5{top: 720px;}
     .r6{top: 860px;}
 
-    .b1{top: 60px; left: calc(50% - 180px)}
-    .b2{top: 330px; left: calc(50% + 180px)}
-    .b3{top: 480px; left: calc(50% - 180px)}
-    .b4{top: 620px; left: calc(50% + 180px)}
-    .b5{top: 720px; left: calc(50% - 180px)}
-    .b6{top: 860px; left: calc(50% + 180px)}
+    .b1{top: 60px; left: 40%}
+    .b2{top: 330px; left: 40%}
+    .b3{top: 480px; left: 40%}
+    .b4{top: 620px; left: 40%}
+    .b5{top: 720px; left: 40%}
+    .b6{top: 860px; left: 40%}
 }
 
 @media (max-width: 480px) {
     .container-titre h2 {
         font-size: 2em;
+    }
+
+    .logo-center{
+        width: 230px;
+        height: 230px;
+    }
+
+    .logo-center > img{
+        width: 150px;
+    }
+
+    .background-img{
+        height: 385px;
     }
 
     .link-text{
@@ -710,39 +735,41 @@ footer{
 
     /* Page comment ça marche  */
     .line{
-        height: 1700px;
+        height: 1100px;
         width: 6px;
+        margin-left: 95%;
     }
 
     .rond{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+        left: 95.5%;
     }
 
     .box{
-        width: 155px;
+        width: 80%;
     }
 
     .r1{top: 60px;}
-    .r2{top: 500px;}
-    .r3{top: 720px;}
-    .r4{top: 890px;}
-    .r5{top: 980px;}
-    .r6{top: 1200px;}
+    .r2{top: 330px;}
+    .r3{top: 480px;}
+    .r4{top: 620px;}
+    .r5{top: 720px;}
+    .r6{top: 860px;}
 
-    .b1{top: 60px; left: calc(50% - 120px)}
-    .b2{top: 500px; left: calc(50% + 120px)}
-    .b3{top: 720px; left: calc(50% - 120px)}
-    .b4{top: 890px; left: calc(50% + 120px)}
-    .b5{top: 980px; left: calc(50% - 120px)}
-    .b6{top: 1200px; left: calc(50% + 120px)}
+    .b1{top: 60px; left: 40%}
+    .b2{top: 330px; left: 40%}
+    .b3{top: 480px; left: 40%}
+    .b4{top: 620px; left: 40%}
+    .b5{top: 720px; left: 40%}
+    .b6{top: 860px; left: 40%}
 }
 
-@media (min-width: 1440px) {
+/*@media (min-width: 1440px) {
     .background-img{
         height: 65vh;
     }
-}
+}*/
 
 
 

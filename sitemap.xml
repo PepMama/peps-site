@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/1.0">
     <url>
-        <loc>http://peps.fr/</loc>
+        <loc>https://prepapeps.com/</loc>
         <lastmod>2024-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>http://peps.fr/pages/adn.html</loc>
+        <loc>https://prepapeps.com/pages/adn.html</loc>
         <lastmod>2024-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://peps.fr/pages/accompaniement.html</loc>
+        <loc>https://prepapeps.com/pages/accompagnement.html</loc>
         <lastmod>2024-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://peps.fr/pages/contact.html</loc>
+        <loc>https://prepapeps.com/pages/contact.html</loc>
         <lastmod>2024-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://peps.fr/pages/how.html</loc>
+        <loc>https://prepapeps.com/pages/comment-ca-marche.html</loc>
         <lastmod>2024-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://peps.fr/pages/in-development.html</loc>
+        <loc>https://prepapeps.com/pages/veille.html</loc>
         <lastmod>2024-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://peps.fr/404.html</loc>
+        <loc>https://prepapeps.com/404.html</loc>
         <lastmod>2024-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
