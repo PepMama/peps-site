@@ -1,35 +1,44 @@
 # PEPS Site Web
 
-Bienvenue sur le site web de PEPS (Performance Énergétique Préparation Sportive). 
+Site vitrine statique de PEPS, Performance Énergétique et Préparation Sportive.
 
-## Arborescence du projet
-peps-site-web/ 
-    ├── assets/   
-                ├── css/ │── styles.css   
-                ├── images/   
-                └── js/ │── script.js     
-    ├── pages/   
-                 └── accompagnements.html   
-                 └── adn.html   
-                 └── contact.html   
-                 └── comment-ça-marche.html   
-                 └── veille.html    
-                 └── mentions-légales.html                   
+## Arborescence
 
-## Installation
+```text
+peps-site/
+├── 404.html
+├── index.html
+├── pages/
+├── assets/
+│   ├── css/
+│   ├── images/
+│   └── js/
+├── scripts/
+│   └── build-shared.js
+├── robots.txt
+└── sitemap.xml
+```
 
-1. Clonez le dépôt :
-   ```bash
-   git clone https://github.com/votre-utilisateur/votre-depot.git
-   
-## Lancer l'application
+## Développement
 
-Ouvrez accueil.html dans votre navigateur
+Le site peut être ouvert directement dans le navigateur depuis `index.html`.
 
-## Fonctionnalités
-Accueil  
-Informations ADN  
-Détails sur les accompagnements  
-Page de contact  
-Veille
-Mentions légales
+Les pages HTML restent statiques et déployables telles quelles. Les blocs partagés
+du site, comme les métadonnées, Open Graph, le header, la hero et le footer, sont
+centralisés dans `scripts/build-shared.js`.
+
+Après modification d'un élément partagé, régénérer les pages avec :
+
+```bash
+node scripts/build-shared.js
+```
+
+## Pages
+
+- Accueil
+- Notre ADN
+- Notre accompagnement
+- Déroulement d'une prestation
+- Contact
+- Veille
+- Mentions légales

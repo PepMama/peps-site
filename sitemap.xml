@@ -2,44 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/1.0">
     <url>
         <loc>https://prepapeps.com/</loc>
-        <lastmod>2024-10-01</lastmod>
+        <lastmod>2026-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://prepapeps.com/pages/adn.html</loc>
-        <lastmod>2024-10-01</lastmod>
+        <lastmod>2026-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://prepapeps.com/pages/accompagnement.html</loc>
-        <lastmod>2024-10-01</lastmod>
+        <lastmod>2026-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://prepapeps.com/pages/contact.html</loc>
-        <lastmod>2024-10-01</lastmod>
+        <lastmod>2026-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://prepapeps.com/pages/comment-ca-marche.html</loc>
-        <lastmod>2024-10-01</lastmod>
+        <lastmod>2026-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://prepapeps.com/pages/veille.html</loc>
-        <lastmod>2024-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://prepapeps.com/404.html</loc>
-        <lastmod>2024-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
     </url>
 </urlset>
