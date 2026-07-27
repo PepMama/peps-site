@@ -19,6 +19,27 @@ peps-site/
 └── sitemap.xml
 ```
 
+## Récupérer le projet avec Git
+
+Vérifiez d'abord que [Git](https://git-scm.com/) est installé sur votre ordinateur,
+puis exécutez les commandes suivantes dans un terminal :
+
+```bash
+git clone <URL_DU_DEPOT>
+cd peps-site
+```
+
+Remplacez `<URL_DU_DEPOT>` par l'adresse HTTPS ou SSH du dépôt Git. Par exemple :
+
+```bash
+git clone https://github.com/utilisateur/peps-site.git
+cd peps-site
+```
+
+Le projet étant un site statique, aucune installation de dépendances n'est
+nécessaire. Vous pouvez ensuite ouvrir `index.html` directement dans votre
+navigateur.
+
 ## Développement
 
 Le site peut être ouvert directement dans le navigateur depuis `index.html`.
