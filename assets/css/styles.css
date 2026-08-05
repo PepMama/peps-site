@@ -338,23 +338,23 @@ a:focus-visible,
 }
 
 .url-adn{
-    background-image: url("../images/image-background-adn.jpg");
+    background-image: url("../images/image-background-adn.webp");
 }
 
 .url-veille{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url("../images/veille-suivi-naturelle.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url("../images/veille-suivi-naturelle.webp");
 }
 
 .url-how{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url("../images/deroulement-prestation-naturelle.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url("../images/deroulement-prestation-naturelle.webp");
 }
 
 .url-accompagnement{
-    background-image: url("../images/accompagnements.png");
+    background-image: url("../images/accompagnements.webp");
 }
 
 .url-contact{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url("../images/contact-naturelle.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url("../images/contact-naturelle.webp");
 }
 
 .header-logo{

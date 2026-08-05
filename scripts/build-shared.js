@@ -80,7 +80,7 @@ function head(page, isHome) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${page.title}</title>
     <link rel="stylesheet" href="${prefix}assets/css/styles.css">
-    <link rel="icon" type="image/png" href="${prefix}assets/images/LOGO/COULEUR/Logo_modifie.png">
+    <link rel="icon" type="image/png" href="${prefix}assets/images/LOGO/COULEUR/logo-peps.png">
     <meta name="description" content="${escapeAttribute(page.description)}">${robots}
     <meta name="keywords" content="${escapeAttribute(site.keywords)}">
     <meta name="author" content="${escapeAttribute(site.author)}">
@@ -125,7 +125,7 @@ function pageChrome(page) {
     <header class="header">
         <div class="test">
             <div class="header-logo">
-                <img src="../assets/images/LOGO/COULEUR/Logo_modifie.png" alt="Logo PREPA’PEPS" decoding="async">
+                <img src="../assets/images/LOGO/COULEUR/icon.png" alt="Logo PREPA’PEPS" decoding="async">
             </div>
             <button class="hamburger" id="hamburger" type="button" aria-label="Ouvrir le menu" aria-controls="nav-menu" aria-expanded="false">
                 <span></span>
