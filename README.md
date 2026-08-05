@@ -1,6 +1,6 @@
-# PEPS Site Web
+# PREPA’PEPS Site Web
 
-Site vitrine statique de PEPS, Performance Énergétique et Préparation Sportive.
+Site vitrine statique de PREPA’PEPS — Le mouvement, sixième sens de l’être humain.
 
 ## Arborescence
 
@@ -53,6 +53,12 @@ Après modification d'un élément partagé, régénérer les pages avec :
 ```bash
 node scripts/build-shared.js
 ```
+
+### Lien vers l'application
+
+Pour activer le bouton « Mon espace », remplacez la valeur `#` de `appUrl` dans
+`scripts/build-shared.js` par l'URL de connexion à l'application, puis relancez
+la commande de build ci-dessus.
 
 ## Pages
 
