@@ -6,16 +6,20 @@ document.querySelectorAll('a[aria-disabled="true"]').forEach((link) => {
 });
 
 if (hamburger && navMenu) {
-    const closeMenu = () => {
+    const header = hamburger.closest('.header');
+
+    const closeMenu = (restoreFocus = false) => {
         navMenu.classList.remove('active');
         hamburger.setAttribute('aria-expanded', 'false');
         hamburger.setAttribute('aria-label', 'Ouvrir le menu');
+        if (restoreFocus) hamburger.focus();
     };
 
     const toggleMenu = () => {
         const isOpen = navMenu.classList.toggle('active');
         hamburger.setAttribute('aria-expanded', String(isOpen));
         hamburger.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+        if (isOpen) navMenu.querySelector('a')?.focus();
     };
 
     hamburger.addEventListener('click', toggleMenu);
@@ -25,9 +29,17 @@ if (hamburger && navMenu) {
         }
     });
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
+        if (event.key === 'Escape' && navMenu.classList.contains('active')) {
+            closeMenu(true);
+        }
+    });
+    document.addEventListener('click', (event) => {
+        if (navMenu.classList.contains('active') && header && !header.contains(event.target)) {
             closeMenu();
         }
+    });
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1100) closeMenu();
     });
 }
 
