@@ -65,13 +65,12 @@ const pages = [
   },
   {
     path: 'pages/veille.html',
-    title: 'PREPA’PEPS - Veille',
+    title: 'PREPA’PEPS - Veille & Suivi',
     description:
-      'Consultez la veille scientifique de PREPA’PEPS, un accompagnement sportif fondé sur les dernières recherches en performance physique et mentale.',
+      'Découvrez le suivi humain, scientifique et technologique de PREPA’PEPS, ainsi que les outils de programmation et de suivi proposés dans son application.',
     canonical: `${site.baseUrl}/pages/veille.html`,
     background: 'url-veille',
     active: 'veille',
-    robots: 'noindex, follow',
   },
 ];
 
@@ -109,9 +108,10 @@ function head(page, isHome) {
 </head>`;
 }
 
-function navLink(page, key, href, label) {
+function navLink(page, key, href, label, itemClass = '') {
   const current = page.active === key ? ' aria-current="page"' : '';
-  return `<li><a href="${href}"${current}>${label}</a></li>`;
+  const classAttribute = itemClass ? ` class="${itemClass}"` : '';
+  return `<li${classAttribute}><a href="${href}"${current}>${label}</a></li>`;
 }
 
 function appLink(className) {
@@ -127,6 +127,7 @@ function pageChrome(page) {
     navLink(page, 'veille', 'veille.html', 'Veille & Suivi'),
     navLink(page, 'comment-ca-marche', 'comment-ca-marche.html', 'Comment ça marche'),
     `<li class="nav-app-link">${appLink('')}</li>`,
+    navLink(page, 'contact', 'contact.html', 'Nous contacter', 'nav-contact-link'),
   ].join('\n                ');
 
   return `<div class="background-img ${page.background}"></div>
@@ -163,8 +164,9 @@ function pageChrome(page) {
 
 function footer(isHome) {
   const href = isHome ? 'pages/mentions-legales.html' : 'mentions-legales.html';
+  const currentYear = new Date().getFullYear();
   return `<footer>
-        <p>&copy; 2024 PREPA’PEPS - Développé par Pépin Maëlic | <a class="link-footer" href="${href}">Mentions légales</a> </p>
+        <p>&copy; ${currentYear} PREPA’PEPS - Développé par Pépin Maëlic | <a class="link-footer" href="${href}">Mentions légales</a> </p>
     </footer>`;
 }
 

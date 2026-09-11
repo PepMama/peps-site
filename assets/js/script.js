@@ -62,3 +62,15 @@ stepToggles.forEach((toggle) => {
         }
     });
 });
+
+const accompanimentToggles = document.querySelectorAll('.accompaniment-toggle');
+
+accompanimentToggles.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+        const panel = document.getElementById(toggle.getAttribute('aria-controls'));
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        if (panel) panel.hidden = isOpen;
+    });
+});
