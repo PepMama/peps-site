@@ -124,8 +124,8 @@ function pageChrome(page) {
     navLink(page, 'accueil', '../index.html', 'Accueil'),
     navLink(page, 'adn', 'adn.html', 'ADN'),
     navLink(page, 'accompagnement', 'accompagnement.html', 'Ton accompagnement'),
-    navLink(page, 'veille', 'veille.html', 'Veille & Suivi'),
     navLink(page, 'comment-ca-marche', 'comment-ca-marche.html', 'Comment ça marche'),
+    navLink(page, 'veille', 'veille.html', 'Veille & Suivi'),
     `<li class="nav-app-link">${appLink('')}</li>`,
     navLink(page, 'contact', 'contact.html', 'Nous contacter', 'nav-contact-link'),
   ].join('\n                ');

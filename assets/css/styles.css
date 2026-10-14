@@ -1101,10 +1101,24 @@ a:focus-visible,
 }
 
 .veille-features article {
-    padding: 20px;
     border: 1px solid #e0e3e5;
     border-radius: 13px;
     background: #f8f9fa;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(20, 25, 40, 0.06);
+}
+
+.veille-features article > img {
+    display: block;
+    width: 100%;
+    height: clamp(190px, 23vw, 245px);
+    object-fit: contain;
+    background: #10182c;
+    border-bottom: 1px solid #dfe3e5;
+}
+
+.veille-features article > div {
+    padding: 20px;
 }
 
 .veille-features article:nth-child(3n + 1) {
@@ -1140,8 +1154,11 @@ a:focus-visible,
 @media (max-width: 480px) {
     .veille-spectrum,
     .veille-calendar-note,
-    .veille-pillar,
-    .veille-features article {
+    .veille-pillar {
+        padding: 19px;
+    }
+
+    .veille-features article > div {
         padding: 19px;
     }
 
